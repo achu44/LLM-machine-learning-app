@@ -11,6 +11,8 @@ The application supports the following:
 
 # INSTRUCTIONS FOR USING APP
 
+Please add an OpenAI API Key to the secrets.toml file in app/.streamlit for the application to be able to properly run and work.
+
 The application is executable by running `docker-compose build && docker-compose up` from the root directory of the repository.
 
 A typical process for using the app is:

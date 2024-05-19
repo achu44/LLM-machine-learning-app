@@ -1,0 +1,78 @@
+>>> 05_data_exploration_B
+
+histogram of LateralLength_FT
+scatter plot of LateralLength_FT and CumOil12Month
+Generate a bar chart for Operator.
+Generate code for a pairplot for the dataset.
+
+>>> 02_data_preprocessing
+
+Categorize the column “CumOil12Month” in the given dataset into "High", "Medium", and "Low" and call the new column "CumOil_Category".
+Make it so that the lowest 90% of the data is classified as "Low", the next highest 5% is classified as "Medium," 
+and the highest 5% is classified as "High."
+"CumOil12Month" is the target variable.
+
+Handle missing values.
+Normalize the data. 
+Encode categorical variables. Use ordinal encoding.
+Perform feature selection.
+Perform feature engineering.
+Do data transformation.
+Handle outliers.
+
+>>> 03_train_models
+
+(REPEATED) Categorize the column “CumOil_12Month” in the given dataset into "High", "Medium", and "Low" and call the new column "CumOil_Category".
+Make it so that the lowest 90% of the data is classified as "Low", the next highest 5% is classified as "Medium," 
+and the highest 5% is classified as "High."
+
+The dataset is imbalanced. CumOil_Category is 90% "Low", 5% "Medium", and 5% "High." 
+Can you write code to address this imbalance using sklearn's resample? Name the result dataframe "df".
+
+Did you name the result dataframe "df"?
+
+run code: df = pd.read_csv('df.csv')
+
+train model: Build a classification model to predict CumOil_Category. Generate the code to train the model. Use a Random Forest.
+Don't convert categorical variables. 
+
+You did get_dummies on CumOil_Category which converted that categorical column into one hot encoding 
+so that column name is no longer available.
+
+Can you generate model evaluation metrics and interpretations?
+Can you give me code to report these metrics but display them in my Streamlit app?
+
+Can you use classification_report to report numbers and display in my Streamlit app?
+
+Can you give me the feature importance in a chart that can be displayed in my Streamlit app?
+
+>>> 04_model_evaluation
+
+Can you generate model evaluation metrics and interpretations?
+
+>>> 01_data_exploration_no_gpt
+
+histogram of LateralLength_FT
+scatter plot of LateralLength_FT and CumOil12Month
+bar chart of Operator
+
+>>> 07_auto_execute_code
+
+histogram of LateralLength_FT
+scatter plot of LateralLength_FT and CumOil12Month
+bar chart of Operator
+Generate code for a pairplot for the dataset.
+
+>>> Features to build with more time
+
+Auto execute code. While loop, send error message back as prompt and iterate until code is executed successfully.
+Display feature importance chart in a clearer way.
+Ability to save models and load them at any time.   
+Better UI/styling.
+Modularize code.
+
+
+
+
+
+
